@@ -55,7 +55,7 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/sjsu.png" style="object-fit: fill" alt="" data-position="center center" /></a>
+							<a class="image"><img src="images/sjsu.png" style="object-fit: fill" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>San Jose State University</h2>
@@ -70,7 +70,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>App Academy</h2>
@@ -104,16 +104,26 @@
 							<h2>Projects</h2>
 							<p>Following are my most recent project works. Feel free to go through git hub repositories. Checkout live pages to get a feel and let me know what you think about it!</p>
 							<div class="features">
-								<section>
+								<section  class="ProjectLink">
+									<a href="">
 									<!-- <span class="icon major fa-code"></span> -->
 									<span class="icon"><img src="./images/meetusIcon.png" class="projectIcon"/></span>
 									<h3>MeetUs - Full-stack website   </h3>
-									<p>This is a one page webapp inspired by the website meetup.com built using Rails(backend) and React-Redux/JavaScript(frontend).</p>
+									<p style="margin-top: 32px;">This is a one page webapp inspired by the website meetup.com built using Rails(backend) and React-Redux/JavaScript(frontend).</p>
+									<ul class="icons">
+											<li><a href="https://github.com/SkyisAakash/MeetUs" class="fa-github" style="font-size: 25px"><span class="label" >GitHub</span></a></li>
+											<li><a href="https://meetus-meetup.herokuapp.com/#/" style="font-size: 20px; margin-left: 20px">MeetUs Live!</a></li>
+									</ul>
+								</a>
 								</section>
 								<section>
-										<span class="icon"><img src="./images/zumaIcon.jpg" class="projectIcon"/></span>
+									<span class="icon"><img src="./images/zumaIcon.jpg" class="projectIcon"/></span>
 									<h3>Zuma - Classic Game utilizing power of JavaScript </h3>
-									<p>This is a game built using JavaScript DOM manipulation techniques.</p>
+									<p>This is a game built using JavaScript DOM manipulation techniques. Animations were implemented on HTML5 canvas.</p>
+									<ul class="icons">
+											<li><a href="https://github.com/SkyisAakash/Zuma" class="fa-github" style="font-size: 25px"><span class="label" >GitHub</span></a></li>
+											<li><a href="https://skyisaakash.github.io/Zuma/" style="font-size: 20px; margin-left: 20px">Play now!</a></li>
+									</ul>
 								</section>
 								<section>
 									<span class="icon major fa-cog"></span>
@@ -203,7 +213,8 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<!-- <li>&copy; Untitled. All rights reserved.</li> -->
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
