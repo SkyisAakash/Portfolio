@@ -1,3 +1,5 @@
+This is a portfoio website for showcasing my projects and education.
+
 Credits:
 
 	Icons:
