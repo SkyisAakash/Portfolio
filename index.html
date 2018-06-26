@@ -130,18 +130,20 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p style="display: block" id="askForFeedback">Thank you for visiting my portfolio website. I love questions, feedback and all other inquiries. Send me a message below and I will get back to you as soon as possible.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" >
+									<form method="post" id="gform">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
 												<input type="text" name="name" id="name" />
+												<p style="display: none" id="name-invalid">Please enter your name.</p>
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
 												<input type="text" name="email" id="email" />
+												<p style="display: none" id="email-invalid">Please enter a valid email address.</p>
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
@@ -149,9 +151,13 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><input type="submit" value="Send Message"/></li>
 										</ul>
 									</form>
+											<div style="display: none" id="thankyou_message">
+												<h2>Thank You for contacting.</h2>
+												<p>I will get back to you as soon as possible.</p>
+											</div>
 								</section>
 								<section>
 									<ul class="contact">
@@ -204,6 +210,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/formHandler.js"></script>
 	</body>
 </html>

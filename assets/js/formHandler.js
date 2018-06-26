@@ -69,15 +69,25 @@
         return false;
       }
       */
+     var invalidName = document.getElementById("name-invalid");
+     var invalidEmail = document.getElementById("email-invalid");
+     if( data.name.length === 0 ) {   // if email is not valid show error
+        if (invalidName) {
+          invalidName.style.display = "block";
+          return false;
+        }
+      }
   
-      if( (data.email && !validEmail(data.email)) || data.email.length === 0 ) {   // if email is not valid show error
-        var invalidEmail = document.getElementById("email-invalid");
+      else if( (data.email && !validEmail(data.email)) || data.email.length === 0 ) {   // if email is not valid show error
         if (invalidEmail) {
           invalidEmail.style.display = "block";
+          invalidName.style.display = "none";
           return false;
         }
       } else {
         disableAllButtons(event.target);
+        invalidEmail.style.display = "none";
+        invalidName.style.display = "none";
         //var url = event.target.action;  //
         var url = "https://script.google.com/macros/s/AKfycbxeqNb3Ra-fgPTfHu-c36IyuFtQpv5rMyVXgFx-oUjnZxC5OjE/exec"
         var xhr = new XMLHttpRequest();
@@ -89,8 +99,10 @@
             console.log(xhr.responseText);
             document.getElementById("gform").style.display = "none"; // hide form
             var thankYouMessage = document.getElementById("thankyou_message");
+            var feedbackLine = document.getElementById("askForFeedback");
             if (thankYouMessage) {
               thankYouMessage.style.display = "block";
+              feedbackLine.style.display = "none";
             }
             return;
         };
