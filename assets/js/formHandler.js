@@ -128,3 +128,12 @@
       }
     }
   })();
+
+  document.addEventListener("DOMContentLoaded", addModal())
+  function addModal() {
+    resume = document.getElementById("resume")
+    modal = document.getElementById("modal")
+    resume.addEventListener("click", ()=>{
+      modal.style.display = "block";
+    })
+  }
