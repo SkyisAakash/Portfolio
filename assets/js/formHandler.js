@@ -137,3 +137,11 @@
       modal.style.display = "block";
     })
   }
+  document.addEventListener("DOMContentLoaded", removeModal())
+  function removeModal() {
+    close = document.getElementById("close")
+    modal = document.getElementById("modal")
+    close.addEventListener("click", ()=>{
+      modal.style.display = "none";
+    })
+  }

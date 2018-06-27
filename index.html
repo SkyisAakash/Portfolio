@@ -16,8 +16,11 @@
 	</head>
 	<body class="is-preload">
 			<div class="modal-background" id="modal" style="display: none;">
-					<h1 class="modal-child">resume</h1>
+				<div class="modal-child">
+					<img src="images/closeIcon.png" class="closeIcon" id="close"/>
+					<embed   class="modal-body" src="./assets/docs/resume.pdf" width="800px" height="2100px" />
 				</div>
+			</div>
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -42,7 +45,7 @@
 							<br>
 							<img src = "./images/profile_pic.jpg" class="profilePic"/>
 							<p style="margin-bottom: 10px">I am Aakash - Software developer</p>
-							<ul class="icons">
+							<ul class="icons" id="headIcons">
 								<li><a href="https://github.com/SkyisAakash" class="fa-github" style="font-size: 45px"><span class="label" >GitHub</span></a></li>
 								<li><a href="https://www.linkedin.com/in/aakash-sarang-50957aa3/" class="fa-linkedin"style="font-size: 45px; margin-left: 20px"><span class="label">LinkedIn</span></a></li>
 							</ul>
@@ -131,14 +134,15 @@
 								</a>
 								</section>
 								<section>
-									<span class="icon major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+										<a href="./Zuma.html">
+										<span class="icon"><img src="./images/zumaIcon.jpg" class="projectIcon"/></span>
+										<h3>Zuma - Classic Game utilizing power of JavaScript </h3>
+										<p>This is a game built using JavaScript DOM manipulation techniques. Animations were implemented on HTML5 canvas.</p>
+										<ul class="icons">
+												<li><a href="https://github.com/SkyisAakash/Zuma" class="fa-github" style="font-size: 25px"><span class="label" >GitHub</span></a></li>
+												<li><a href="https://skyisaakash.github.io/Zuma/" style="font-size: 20px; margin-left: 20px">Play now!</a></li>
+										</ul>
+									</a>
 								</section>
 							</div>
 							<!-- <ul class="actions">

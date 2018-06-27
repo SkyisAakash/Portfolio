@@ -24,14 +24,40 @@
   }
   
   .modal-child {
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 3%;
+    left: 25%;
+    max-height: 95%;
+    overflow-y: auto;
+    /* transform: translate(-50%, -50%); */
+  }
+  .rotate-right {
+      display: none
   }
   
-  
-
+.closeIcon {
+    border-radius: 50%;
+    align-self: right;
+    height: 20px;
+    width: 20px;
+}
+.closeIcon:hover {
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+}
+#resume:hover {
+    cursor: pointer;
+    color: white;
+    /* font-weight: 900; */
+}
+#headIcons {
+    margin-bottom: 1px;
+}
 
 
 
