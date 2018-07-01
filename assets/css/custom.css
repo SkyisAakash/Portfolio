@@ -82,7 +82,11 @@
 #headIcons {
     margin-bottom: 1px;
 }
-
+@media all and (max-width: 900px) {
+    .modalContents {
+        width: 100%;
+    }
+  }
 
 
 
