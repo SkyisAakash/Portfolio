@@ -19,23 +19,43 @@
     bottom: 0;
     right: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
     background: rgba(0, 0, 0, 0.7);
     z-index: 10;
+  }
+
+  .hidden {
+      display: none;
   }
 
   .image {
     box-shadow: inset 3px 3px 5px black;
   }
+
+  .modalContents {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      height: 100%;
+      align-items: flex-end;
+  }
+
+  .modal-body {
+    width: 100%;
+    height: 100%; 
+  }
   
   .modal-child {
-    background-color: black;
+    background-color: transparent;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
     position: absolute;
+    width: 100%;
+    margin: 0 auto;
     top: 3%;
-    left: 25%;
-    max-height: 95%;
+    height: 95%;
     overflow-y: auto;
     /* transform: translate(-50%, -50%); */
   }

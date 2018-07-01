@@ -133,15 +133,19 @@
   function addModal() {
     resume = document.getElementById("resume")
     modal = document.getElementById("modal")
+    side = document.getElementById("sidebar")
     resume.addEventListener("click", ()=>{
       modal.style.display = "block";
+      side.classList.add("hidden")
     })
   }
   document.addEventListener("DOMContentLoaded", removeModal())
   function removeModal() {
     close = document.getElementById("close")
     modal = document.getElementById("modal")
+    side = document.getElementById("sidebar")
     close.addEventListener("click", ()=>{
       modal.style.display = "none";
+      side.classList.remove("hidden")
     })
   }
