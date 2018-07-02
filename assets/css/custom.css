@@ -46,6 +46,16 @@
     width: 100%;
     height: 100%; 
   }
+
+  #homeButton:hover {
+    text-shadow: 0 0 3px white;
+  }
+  
+  #homeButton {
+    font-size: 17px !important; 
+    letter-spacing: 0 !important; 
+    color: white !important;
+  }
   
   .modal-child {
     background-color: transparent;
