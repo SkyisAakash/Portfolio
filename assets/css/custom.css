@@ -47,6 +47,15 @@
     height: 100%; 
   }
 
+  #appstore {
+      margin-bottom: 0px;
+      height: 50px;
+      width: 150px;
+      vertical-align: middle;
+  }
+  #appstore:hover {
+      box-shadow: 0 0 3px white;
+  }
   #homeButton:hover {
     text-shadow: 0 0 3px white;
   }
