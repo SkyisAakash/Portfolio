@@ -100,10 +100,17 @@
 #headIcons {
     margin-bottom: 1px;
 }
+#appstore{
+    font-size: 20px; margin-left: 5%;
+}
 @media all and (max-width: 900px) {
     .modalContents {
         width: 100%;
     }
+    #appstore{
+        margin-left: 0.2%;
+    }
+
   }
 
 
