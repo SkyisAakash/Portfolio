@@ -110,6 +110,9 @@
     #appstore{
         margin-left: 0.2%;
     }
+    #appstore:hover {
+        box-shadow: none;
+    }
 
   }
 
